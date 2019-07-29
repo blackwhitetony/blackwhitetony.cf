@@ -37,18 +37,6 @@
         </ul>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
-        <div class="mdui-card-primary">
-            <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">settings</i></span>
-                <span class="mdui-chip-title">管理</span>
-            </div> 
-        </div>
-        <ul class="mdui-list mdui-list-dense">
-            <a href="/admin" target="_blank" class="mdui-list-item mdui-ripple">后台管理<span class="tag-right">/admin</span></a>
-            <a href="/feed" target="_blank" class="mdui-list-item mdui-ripple">文章RSS<span class="tag-right">/feed</span></a>
-        </ul>
-    </div>
-    <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary" style="display:flex">
             <div class="mdui-chip">
                 <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">link</i></span>
@@ -59,6 +47,32 @@
             <a href="https://www.cnblogs.com/terrasse" target="_blank" class="mdui-list-item mdui-ripple">WZX<span class="tag-right">cnblogs.com/terrasse</span></a>
             <a href="https://alexanderchen.gitee.io/" target="_blank" class="mdui-list-item mdui-ripple">CYC<span class="tag-right">alexanderchen.gitee.io</span></a>
             <a href="http://47.103.106.225/" target = "_blank" class = "mdui-list-item mdui-ripple">LLF<span class="tag-right">llf0703.com</span></a>
+        </ul>
+    </div>
+    <div class="mdui-card card-fixed mdui-hoverable">
+        <div class="mdui-card-primary" style="display:flex">
+            <div class="mdui-chip">
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">link</i></span>
+                <span class="mdui-chip-title">工具</span>
+            </div> 
+        </div>
+        <ul class="mdui-list mdui-list-dense">
+            <li class="mdui-list-item mdui-ripple">
+                <a herf="https://oeis.org" class="mdui-list-item-content">OEIS</a>
+                <img src="https://oeis.org/favicon.ico">
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <a herf="https://https://csacademy.com/app/graph_editor/" class="mdui-list-item-content">graph_editor</a>
+                <img src="https://www.easyicon.net/download/png/1194072/16/">
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <a herf="https://oi-wiki.org/" class="mdui-list-item-content">OIwiki</a>
+                <img src="https://www.easyicon.net/download/png/568162/16/">
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <a herf="http://bytew.net/OIer" class="mdui-list-item-content">OIerDb</a>
+                <img src="https://www.easyicon.net/download/png/1177191/16/">
+            </li>
         </ul>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
