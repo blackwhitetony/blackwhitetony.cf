@@ -3,7 +3,7 @@
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary">
             <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">bookmark</i></span>
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe866;</i></span>
                 <span class="mdui-chip-title">分类</span>
             </div> 
         </div>
@@ -14,7 +14,7 @@
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary">
             <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">bookmark_border</i></span>
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe867;</i></span>
                 <span class="mdui-chip-title">标签</span>
             </div> 
         </div>
@@ -28,7 +28,7 @@
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary">
             <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">inbox</i></span>
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe156;</i></span>
                 <span class="mdui-chip-title">归档</span>
             </div> 
         </div>
@@ -39,7 +39,7 @@
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary" style="display:flex">
             <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">link</i></span>
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe156;</i></span>
                 <span class="mdui-chip-title">友链</span>
             </div> 
         </div>
@@ -52,25 +52,25 @@
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary" style="display:flex">
             <div class="mdui-chip">
-                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">link</i></span>
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe869;</i></span>
                 <span class="mdui-chip-title">工具</span>
             </div> 
         </div>
         <ul class="mdui-list mdui-list-dense">
             <li class="mdui-list-item mdui-ripple">
-                <a herf="https://oeis.org" class="mdui-list-item-content">OEIS</a>
+                <a href="https://oeis.org" target="_blank" class="mdui-list-item-content">OEIS</a>
                 <img src="https://oeis.org/favicon.ico">
             </li>
             <li class="mdui-list-item mdui-ripple">
-                <a herf="https://https://csacademy.com/app/graph_editor/" class="mdui-list-item-content">graph_editor</a>
+                <a href="https://https://csacademy.com/app/graph_editor/" target="_blank" class="mdui-list-item-content">graph_editor</a>
                 <img src="https://www.easyicon.net/download/png/1194072/16/">
             </li>
             <li class="mdui-list-item mdui-ripple">
-                <a herf="https://oi-wiki.org/" class="mdui-list-item-content">OIwiki</a>
+                <a href="https://oi-wiki.org/" target="_blank" class="mdui-list-item-content">OIwiki</a>
                 <img src="https://www.easyicon.net/download/png/568162/16/">
             </li>
             <li class="mdui-list-item mdui-ripple">
-                <a herf="http://bytew.net/OIer" class="mdui-list-item-content">OIerDb</a>
+                <a href="http://bytew.net/OIer" target="_blank" class="mdui-list-item-content">OIerDb</a>
                 <img src="https://www.easyicon.net/download/png/1177191/16/">
             </li>
         </ul>

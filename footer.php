@@ -11,7 +11,7 @@
 <script>renderMathInElement(document.body,{delimiters:[{left: "$$", right: "$$", display: true},{left: "$", right: "$", display: false}],ignoredTags:["script", "noscript", "style", "textarea", "pre", "code"],ignoredClasses:["nokatex"]});</script>
 <div class="mdui-fab-wrapper" mdui-fab="">
     <button class="mdui-fab mdui-ripple mdui-color-theme-accent mdui-fab-hide" id="scrolltop" mdui-tooltip="{content: '返回顶部',position: 'left'}">
-        <i class="mdui-icon material-icons">add</i>
+        <i class="mdui-icon material-icons">&#xe145;</i>
         <i class="mdui-icon mdui-fab-opened material-icons">keyboard_arrow_up</i>
     </button>
     <div class="mdui-fab-dial" style="height: 0px;">
