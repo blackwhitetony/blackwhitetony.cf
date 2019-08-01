@@ -12,23 +12,19 @@
 <div class="mdui-fab-wrapper" mdui-fab="">
     <button class="mdui-fab mdui-ripple mdui-color-theme-accent mdui-fab-hide" id="scrolltop" mdui-tooltip="{content: '返回顶部',position: 'left'}">
         <i class="mdui-icon material-icons">&#xe145;</i>
-        <i class="mdui-icon mdui-fab-opened material-icons">keyboard_arrow_up</i>
+        <i class="mdui-icon mdui-fab-opened material-icons">&#xe314;</i>
     </button>
     <div class="mdui-fab-dial" style="height: 0px;">
         <?php if ($this->is('post')) {?>
             <?php $lg=$this->fields->luogu;?>
             <?php $url=$this->fields->url;?>
-            <?php if ($this->category=='sol') {?>
-                <?php if (isset($lg)) {?>
-                    <a href="https://www.luogu.org/problemnew/show/<?php $this->fields->luogu();?>" target="_blank" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" style="transition-delay: 0ms;" mdui-tooltip="{content: '题目链接',position: 'left'}"><i class="mdui-icon material-icons">link</i></a>
-                <?php } elseif (isset($url)) { ?>
-                    <a href="<?php $this->fields->url();?>" target="_blank" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" style="transition-delay: 0ms;" mdui-tooltip="{content: '题目链接',position: 'left'}"><i class="mdui-icon material-icons">link</i></a>
-                <?php }?>
+            <a href="<?php $this->options->adminUrl(); ?>write-post.php?cid=<?php $this->cid();?>" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" style="transition-delay: 15ms;" mdui-tooltip="{content: '编辑文章',position: 'left'}"><i class="mdui-icon material-icons">&#xe3c9;</i></a>
+            <?php if (isset($this->fields->prob_url)) {?>
+                <a href="<?php $this->fields->prob_url()?>" target="_blank" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-green" style="transition-delay: 0ms;" mdui-tooltip="{content: '跳转题目',position: 'left'}"><i class="mdui-icon material-icons">&#xe157;</i></a>
             <?php }?>
-            <a href="<?php $this->options->adminUrl(); ?>write-post.php?cid=<?php $this->cid();?>" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" style="transition-delay: 15ms;" mdui-tooltip="{content: '编辑文章',position: 'left'}"><i class="mdui-icon material-icons">edit</i></a>
         <?php } elseif ($this->is('index')) { ?>
-            <a href="<?php $this->options->adminUrl();?>" target="_blank" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" style="transition-delay: 0ms;" mdui-tooltip="{content: '后台管理',position: 'left'}"><i class="mdui-icon material-icons">near_me</i></a>
-        <?php }?>
+            <a href="<?php $this->options->adminUrl();?>" target="_blank" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" style="transition-delay: 0ms;" mdui-tooltip="{content: '后台管理',position: 'left'}"><i class="mdui-icon material-icons">&#xe569;</i></a>
+        <?php }?>    
     </div>
 </div>
 <script>
@@ -52,7 +48,7 @@
 <script>$(".seai").click(function(){$("#SearchBar").show();$(".OutOfsearchBox").fadeIn(300);$(".fullScreen").fadeIn(300);$("#SearchBar > *").animate({opacity:'1'},200);$(".outOfSearch").css('width','75%');$(".seainput").focus();$('body').toggleClass('search-lock')});$(".sea-close").click(function(){$("#SearchBar > *").animate({opacity:'0'},200);$(".fullScreen").fadeOut(300);$(".OutOfsearchBox").fadeOut(300);$(".outOfSearch").css('width','30%');window.setTimeout("hideBar()",300);$('body').toggleClass('search-lock')});function hideBar(){$("#SearchBar").hide()}</script>
 <footer class="blog-footer">
     <div class="blog-text-center">
-        &copy; 2017-<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+        &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
         <br>
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> | <a href="https://github.com/blackwhitetony" target="_blank"> Github </a>
         <br>

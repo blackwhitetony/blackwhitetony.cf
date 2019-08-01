@@ -2,6 +2,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
+    <script >hljs.initHighlightingOnLoad();</script>  
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

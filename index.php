@@ -11,8 +11,6 @@ $this->need('nav.php');
                 <h1 class="header-title"><?php $this->options->backgroundText(); ?></h1>
             </div>
         </div>
-        <a class="banner-copy" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=53788580"
-            target="_blank">&copy;NIK / Pixiv.net</a>
     </header>
     <div class="mdui-container">
         <div class="mdui-row card-first">

@@ -18,8 +18,6 @@ $this->need('nav.php');
                 </div>
             </div>
         </div>
-        <a class="banner-copy" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=66094121"
-            target="_blank">&copy;純粋 / Pixiv.net</a>
     </header>
     <div class="mdui-container blog-content">
         <div class="mdui-row">
