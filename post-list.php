@@ -4,7 +4,7 @@
         <a class="mdui-card-primary-title title-fixed" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
     </div>
 
-    <div class="mdui-card-content nokatex">
+    <div class="mdui-card-content katex">
         <?php $all = Typecho_Plugin::export(); if(array_key_exists('Soso', $all['activated'])): ?>
             <?php $this->excerpts($this); ?>
         <?php else: ?>
