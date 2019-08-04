@@ -2,14 +2,14 @@
 
     <div class="mdui-card-primary">
         <a class="mdui-card-primary-title title-fixed" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+        <a class="mdui-card-primary-subtitle title-fixed"><?php $this->tags(', ', true, 'none')?></a>
     </div>
 
-    <div class="mdui-card-content katex">
-        <?php $all = Typecho_Plugin::export(); if(array_key_exists('Soso', $all['activated'])): ?>
-            <?php $this->excerpts($this); ?>
-        <?php else: ?>
-            <?php $this->excerpt(200, '...'); ?>
-        <?php endif; ?>
+    <div class="mdui-card-content nokatex">
+        <?php
+            if (isset($this->fields->summary)) { echo $this->fields->summary; }
+            else $this->excerpt(200, '...');
+        ?>
     </div>
 
     <div class="mdui-card-actions">

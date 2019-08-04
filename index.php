@@ -16,7 +16,7 @@ $this->need('nav.php');
         <div class="mdui-row card-first">
             <div class="mdui-col-md-9 mdui-col-sm-12">
                 <?php while($this->next()): ?>
-                <?php $this->need('post-list.php'); ?>
+                    <?php $this->need('post-list.php'); ?>
                 <?php endwhile; ?>
                 <div id="ad" class="mdui-card card-fixed mdui-hoverable">
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

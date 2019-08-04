@@ -24,7 +24,7 @@ $this->need('nav.php');
             <div class="mdui-col-md-9 mdui-col-sm-12">
                 <?php if ($this->have()): ?>
                 <?php while($this->next()): ?>
-                <?php $this->need('post-list.php'); ?>
+                    <?php $this->need('post-list.php'); ?>
                 <?php endwhile; ?>
                 <?php else: ?>
                 <div class="mdui-card card-fixed mdui-hoverable">
