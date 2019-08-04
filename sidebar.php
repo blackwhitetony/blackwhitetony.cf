@@ -46,7 +46,7 @@
         <ul class="mdui-list mdui-list-dense">
             <a href="https://www.cnblogs.com/terrasse" target="_blank" class="mdui-list-item mdui-ripple">WZX<span class="tag-right">cnblogs.com/terrasse</span></a>
             <a href="https://alexanderchen.gitee.io/" target="_blank" class="mdui-list-item mdui-ripple">CYC<span class="tag-right">alexanderchen.gitee.io</span></a>
-            <a href="https://llf0703.com/" target = "_blank" class = "mdui-list-item mdui-ripple">LLF<span class="tag-right">llf0703.com</span></a>
+            <a href="https://llf0703.com" target = "_blank" class = "mdui-list-item mdui-ripple">LLF<span class="tag-right">llf0703.com</span></a>
         </ul>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
@@ -63,15 +63,15 @@
             </li>
             <li class="mdui-list-item mdui-ripple">
                 <a href="https://https://csacademy.com/app/graph_editor/" target="_blank" class="mdui-list-item-content">graph_editor</a>
-                <img src="https://www.easyicon.net/download/png/1194072/16/">
+                <img src="http://blackwhitetony.cf/usr/uploads/2019/08/227646295.png">
             </li>
             <li class="mdui-list-item mdui-ripple">
                 <a href="https://oi-wiki.org/" target="_blank" class="mdui-list-item-content">OIwiki</a>
-                <img src="https://www.easyicon.net/download/png/568162/16/">
+                <img src="http://blackwhitetony.cf/usr/uploads/2019/08/2309591418.png">
             </li>
             <li class="mdui-list-item mdui-ripple">
                 <a href="http://bytew.net/OIer" target="_blank" class="mdui-list-item-content">OIerDb</a>
-                <img src="https://www.easyicon.net/download/png/1177191/16/">
+                <img src="http://blackwhitetony.cf/usr/uploads/2019/08/4061474708.png">
             </li>
         </ul>
     </div>
