@@ -8,7 +8,11 @@
             </div> 
         </div>
         <ul class="mdui-list mdui-list-dense">
-            <?php $this->widget('Widget_Metas_Category_List')->parse('<a href="{permalink}" title="{description}" class="mdui-list-item mdui-ripple">{name}<span class="tag-right">{count}</span></a>'); ?>
+            <?php $obj = $this->widget('Widget_Metas_Category_List'); $tot = 0?>
+            <?php while($obj->next()) { $tot++; } ?>
+            <?php while($obj->next()) { ?>
+                <a href="<?php $obj->permalink ?>" title="<?php $obj->description?>" class="mdui-list-item mdui-ripple"><?php echo $obj->name?><span class="tag-right"><?php echo $obj->count?></span></a>
+            <?php } ?>
         </ul>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
@@ -20,12 +24,12 @@
         </div>
         <div class="mdui-card-content tag-list">
             <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'name', 'ignoreZeroCount' => true, 'desc' => false))->to($tags); ?>
-            <?php while($tags->next()): ?>
-                <?php if ($tags->count <= 3) { ?><a href="<?php $tags->permalink(); ?>"><span class="taga"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php }?>
-                <?php if ($tags->count > 3 && $tags->count <= 5) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagb"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
-                <?php if ($tags->count > 5 && $tags->count <= 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagc"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
-                <?php if ($tags->count > 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagd"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
-            <?php endwhile; ?>
+            <?php while($tags->next()) { ?>
+                <?php if ($tags->count <= 3) { ?><a href="<?php $tags->permalink(); ?>"><span class="tag taga"><?php echo $tags->name ?></span></a>&nbsp;<?php }?>
+                <?php if ($tags->count > 3 && $tags->count <= 5) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagb"><?php echo $tags->name ?></span></a>&nbsp;<?php } ?>
+                <?php if ($tags->count > 5 && $tags->count <= 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagc"><?php echo $tags->name ?></span></a>&nbsp;<?php } ?>
+                <?php if ($tags->count > 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagd"><?php echo $tags->name ?></span></a>&nbsp;<?php } ?>
+            <?php } ?>
         </div>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
@@ -36,8 +40,11 @@
             </div> 
         </div>
         <ul class="mdui-list mdui-list-dense">
-            <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y年 m月')->parse('<a href="{permalink}" class="mdui-list-item mdui-ripple">{date}<span class="tag-right">{count}</span></a>'); ?>
-        </ul>
+            <?php $typ = $this->widget('Widget_Contents_Post_Date', 'format=Y 年 m 月&type=month&limit=0');?>
+            <?php while($typ->next()) { ?>
+                <a href="<?php $typ->permalink ?>" class="mdui-list-item mdui-ripple"><?php echo $typ->date; ?><span class="tag-right"><?php echo $typ->count; ?></span></a>
+            <?php } ?>
+         </ul>
     </div>
     <div class="mdui-card card-fixed mdui-hoverable">
         <div class="mdui-card-primary" style="display:flex">
@@ -65,7 +72,7 @@
                 <img src="https://oeis.org/favicon.ico">
             </li>
             <li class="mdui-list-item mdui-ripple">
-                <a href="https://https://csacademy.com/app/graph_editor/" target="_blank" class="mdui-list-item-content">graph_editor</a>
+                <a href="https://csacademy.com/app/graph_editor/" target="_blank" class="mdui-list-item-content">graph_editor</a>
                 <img src="http://blackwhitetony.cf/usr/uploads/2019/08/227646295.png">
             </li>
             <li class="mdui-list-item mdui-ripple">
