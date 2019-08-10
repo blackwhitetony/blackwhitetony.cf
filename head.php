@@ -26,6 +26,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.min.css'); ?>">
     <style>.lg-bg-gray{background-color:#bbb;text-shadow:none}.lg-bg-red{background-color:#e74c3c;text-shadow:none}.lg-bg-orange{background-color:#e67e22;text-shadow:none}.lg-bg-yellow{background-color:#f1c40f;text-shadow:none}.lg-bg-green{background-color:#5eb95e;text-shadow:none}.lg-bg-bluelight{background-color:#3498db;text-shadow:none}.lg-bg-purple{background-color:#8e44ad;text-shadow:none}.lg-bg-bluedark{background-color:#2e468c;text-shadow:none}</style>
+    <style type="text/css">a.mytitle{font-size:20px;letter-spacing:1px}</style>
+    <style type="text/css">span.taga{color:#999999; font-size:13px}</style>
+    <style type="text/css">span.tagb{color:#666666; font-size:15px}</style>
+    <style type="text/css">span.tagc{color:#333333; font-size:17px}</style>
+    <style type="text/css">span.tagd{color:#000000; font-size:19px; font-weight:bold}</style>
 </head>
 <body class="mdui-theme-accent-pink">
 <div id="process"></div>

@@ -1,7 +1,10 @@
 <div class="mdui-card card-fixed mdui-hoverable">
 
     <div class="mdui-card-primary">
-        <a class="mdui-card-primary-title title-fixed" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+        <div class="mdui-chip">
+            <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe7f9;</i></span>
+            <a href="<?php $this->permalink() ?>"class="mdui-chip-title mytitle"><?php $this->title() ?></a>
+        </div> 
     </div>
     <div class="mdui-card-content nokatex"><?php if (isset($this->fields->summary)) { echo $this->fields->summary; } else $this->excerpt(200, '...'); ?></div>
     <div class="mdui-card-actions">

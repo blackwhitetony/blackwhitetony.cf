@@ -21,7 +21,10 @@
         <div class="mdui-card-content tag-list">
             <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'name', 'ignoreZeroCount' => true, 'desc' => false))->to($tags); ?>
             <?php while($tags->next()): ?>
-                <a class="tags" href="<?php $tags->permalink(); ?>"><span class="tag name"><?php $tags->name(); ?></span><span class="tag num"><?php $tags->count();?></span></a>
+                <?php if ($tags->count <= 3) { ?><a href="<?php $tags->permalink(); ?>"><span class="taga"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php }?>
+                <?php if ($tags->count > 3 && $tags->count <= 5) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagb"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
+                <?php if ($tags->count > 5 && $tags->count <= 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagc"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
+                <?php if ($tags->count > 8) { ?><a href="<?php $tags->permalink(); ?>"><span class="tagd"><?php echo $tags->name ?></span></a>&nbsp;&nbsp;<?php } ?>
             <?php endwhile; ?>
         </div>
     </div>
