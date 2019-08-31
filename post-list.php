@@ -1,12 +1,12 @@
 <div class="mdui-card card-fixed mdui-hoverable">
-
     <div class="mdui-card-primary">
-        <div class="mdui-chip">
-            <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">&#xe7f9;</i></span>
-            <a href="<?php $this->permalink() ?>"class="mdui-chip-title mytitle"><?php $this->title() ?></a>
-        </div> 
+        <a href="<?php $this->permalink() ?>" class="title-fixed" style="font-size:24px; font-weight:500"><?php $this->title()?></a>
+        <div class="mdui-card-primary-subtitle">
+            <i class="mdui-icon material-icons index-icon">&#xe192;</i> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time> &nbsp;&nbsp;
+        </div>
     </div>
-    <div class="mdui-card-content nokatex"><?php if (isset($this->fields->summary)) { echo $this->fields->summary; } else $this->excerpt(200, '...'); ?></div>
+    <?php if(isset($this->fields->summary)) { ?><div class="mdui-card-content katex"><?php echo $this->fields->summary ?></div><?php }?>
+    <?php if(!isset($this->fields->summary)) { ?><div class="mdui-card-content"><?php $this->content(); ?></div><?php } ?>
     <div class="mdui-card-actions">
         <span class="more">
             <i class="mdui-icon material-icons index-icon">&#xe192;</i> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time> &nbsp;&nbsp;

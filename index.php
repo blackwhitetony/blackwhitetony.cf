@@ -18,14 +18,6 @@ $this->need('nav.php');
                 <?php while($this->next()): ?>
                     <?php $this->need('post-list.php'); ?>
                 <?php endwhile; ?>
-                <div id="ad" class="mdui-card card-fixed mdui-hoverable">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6222039443661594"
-                        data-ad-slot="3168698407" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 <div class="page-nav">
                     <div class="prev-page mdui-col-xs-6">
                         <?php $this->pageLink('<button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">&#xe5c4;</i></button>'); ?>
